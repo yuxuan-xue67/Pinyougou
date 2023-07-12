@@ -10,20 +10,68 @@
     float: left;
     width: 721px;
     height: 455px;
+    overflow: hidden;
     /* background-color: purple; */
 }
-.focus ul {
+.focus-img{
+    display: flex;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
+}
+.arrow-l{
+    position: absolute;
+    top: 230px;
+    left: 0;
+    background-color: rgb(0,0,0,0.5);
+
+}
+.arrow-r{
+    position: absolute;
+    top: 230px;
+    right: 0;
+    background-color: rgb(0,0,0,0.5);
+}
+.arrow-l,
+.arrow-r{
+    display: none;
+    /* 层级在focus li下面，所以加一个z-index */
+    z-index: 2;
+}
+.focus-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 600%;
 }
-.focus ul li{
+.focus-img li{
     float: left;
 }
-.arrow-l,
+
+.circle li{
+    margin-left: 5px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.circle{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    text-align: center;
+}
+.circle-box{
+    display: flex;
+}
+.current{
+    background-color: #fff;
+}
+/* .arrow-l,
 .arrow-r{
-    /* display: none; */
+    
     position: absolute;
     top: 50%;
     margin-top: -20px;
@@ -34,13 +82,13 @@
     color: #fff;
     font-family: 'icomoon';
     font-size: 18px;
-}
-.arrow-r{
+} */
+/* .arrow-r{
     right: 0;
 }
 .arrow-l{
     left: 0;
-}
+} */
 
 .newsflash{
     float: right;
@@ -191,10 +239,29 @@
 .tab_list_item>div{
     float: left;
 }
+
+.fixedtool{
+    position: fixed;
+    top: 100px;
+    width: 66px;
+    left: 50%;
+    margin-left: -676px;
+    display: none;
+}
+.fixedtool li{
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.fixedtool .current{
+    background-color: #C81623;
+}
 .col_210{
     width: 210px;
     background-color: #f9f9f9;
-    /* height: 361px; */
+    height: 361px;
     text-align: center   ;
 }
 .col_210 ul{
