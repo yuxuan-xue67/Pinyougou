@@ -165,6 +165,34 @@ $(function(){
         //点击之后，让当前li添加current类名，姐妹移除current类名
         $(this).addClass('current').siblings().removeClass();
     })
+
+})
+
+//倒计时效果
+window.addEventListener('load', function(){
+    //获取元素
+    var hour = document.querySelector('.hour');
+    var min = document.querySelector('.min');
+    var sec = document.querySelector('.sec');
+    var inputTime = +new Date('2023-7-13 00:00:00');//用户输入时间总的毫秒数
+    //添加计时器
+    countDown();//先调用一次该函数，防止页面刷新时有空白
+    setInterval(countDown,1000);//如果是带参函数，格式应该为setInterval(func,参数,时间间隔)
+
+    //倒计时函数
+    function countDown(){
+        var nowTime = +new Date();//当前时间总的毫秒数
+        var time = (inputTime - nowTime) / 1000
+        var h = parseInt(time / 60 / 60 % 24);
+        h = h < 10? '0' + h: h;
+        hour.innerHTML = h;
+        var m = parseInt(time / 60 % 60);
+        m = m < 10? '0' + m: m;
+        min.innerHTML = m;
+        var s = parseInt(time % 60);
+        s = s < 10? '0' + s: s;
+        sec.innerHTML = s;
+    }
     
 })
 
