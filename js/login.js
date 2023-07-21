@@ -3,8 +3,8 @@ window.addEventListener('load', function(){
     //1.添加点击时间
     var btn = document.querySelector('.btn');
     btn.addEventListener('click',function(){
-        var username_msg = document.querySelector('.username_msg');
-        var password_msg = document.querySelector('.password_msg');
+        // var username_msg = document.querySelector('.username_msg');
+        // var password_msg = document.querySelector('.password_msg');
         var submit_msg = document.querySelector('.submit_msg_span');
         //username_msg.style.display = 'inline-block';
         // function alertUsername(msg, isSuccess){
