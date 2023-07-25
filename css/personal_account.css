@@ -1,0 +1,117 @@
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header */
+header{
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+.logo{
+    padding-top: 10px;
+}
+/* body */
+.registerarea{
+    margin-top: 20px;
+    height: 600px;
+    border: 1px solid #c81523;
+}
+.registerarea h3{
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.login{
+    float: right;
+    font-size: 14px;
+}
+.login a{
+    color: #c81523;
+}
+.reg_form{
+    width: 650px;
+    /* background-color: pink; */
+    margin: 50px auto 0;
+}   
+.reg_form ul li{ 
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.reg_form ul li label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+.reg_form ul li .inp{
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.password_msg{
+    display: none;
+}
+.username_msg{
+    display: none;
+}
+.submit_msg{
+    width: 450px;
+    height: 30px;
+    text-align: center;
+}
+.submit_msg span{
+    display: none;
+}
+
+.agree{
+    padding-left: 100px;
+}
+.agree input{
+    vertical-align: middle;
+}
+.agree a{
+    color: #1ba1e6;
+}
+.btn{
+    margin: 30px 0 0 120px;
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    font-size: 16px;
+    color: #fff;
+}
+/* footer */
+.mod_copyright{
+    /* float: left; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links{
+    margin-bottom: 15px;
+}
+
+.copyright{
+    line-height: 20px;
+}
+
+
+
+.gender input{
+    float: left;
+}
+
+.gender label{
+    float: left;
+}
+.toast{
+    float: right;
+}
+.success{
+    color:green;
+    position: absolute;
+    display: none;
+}
